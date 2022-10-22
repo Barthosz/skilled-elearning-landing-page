@@ -7,6 +7,7 @@
   --clr-light-red: 341°, 92%, 62%;
   --clr-pink: 341°, 100%, 83%;
   --clr-white: 0°, 0%, 100%;
+  --clr-gradient: linear-gradient(0, 322°, 87%, 55%, 100, 322°, 87%, 55%)
   /* font-sizes */
   --fs-body-s: 1rem;
   --fs-body-m: 1.125rem;
