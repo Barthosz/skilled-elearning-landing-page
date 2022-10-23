@@ -1,13 +1,22 @@
 /* --- custom properties --- */
 :root {
   /* colors */
-  --clr-dark-blue: 233°, 54%, 16%;
-  --clr-dark-grey: 234°, 25%, 52%;
-  --clr-grey: 232°, 10%, 56%;
-  --clr-light-red: 341°, 92%, 62%;
-  --clr-pink: 341°, 100%, 83%;
-  --clr-white: 0°, 0%, 100%;
-  --clr-gradient: linear-gradient(0, 322°, 87%, 55%, 100, 322°, 87%, 55%)
+  --clr-dark-blue: 233, 54%, 16%;
+  --clr-dark-grey: 234, 25%, 52%;
+  --clr-grey: 232, 10%, 56%;
+  --clr-light-red: 341, 92%, 62%;
+  --clr-pink: 341, 100%, 83%;
+  --clr-white: 0, 0%, 100%;
+  --clr-gradient-orange: linear-gradient(
+    0deg,
+    rgba(240, 42, 166, 1) 0%,
+    rgba(255, 111, 72, 1) 100%
+  );
+  --clr-gradient-purple: linear-gradient(
+    180deg,
+    rgba(72, 81, 255, 1) 49%,
+    rgba(240, 42, 166, 1) 90%
+  );
   /* font-sizes */
   --fs-body-s: 1rem;
   --fs-body-m: 1.125rem;
@@ -98,5 +107,84 @@ select {
 /* --- utility classes --- */
 /* general */
 /* colors */
+.bg-dark {
+  color: hsl(var(--clr-dark-blue));
+}
+.text-dark {
+  color: hsl(var(--clr-dark-blue));
+}
+.text-grey {
+  color: hsl(var(--clr-grey));
+}
+
 /* typography */
+.ff-jakarta {
+  font-family: var(--ff-jakarta);
+}
+
+/* --fs-body-s: 1rem;
+--fs-body-m: 1.125rem;
+--fs-heading-s: 1.5rem;
+--fs-heading-m: 2rem;
+--fs-heading-l: 2.5rem;
+--fs-heading-xl: 3.5rem; */
+
+.fsw-body-s {
+  font-size: var(--fs-body-s);
+  font-weight: 500;
+}
+.fsw-body-m {
+  font-size: var(--fs-body-m);
+  font-weight: 500;
+}
+
+.fsw-heading-s {
+  font-size: var(--fs-heading-s);
+  font-weight: 800;
+}
+.fsw-heading-m {
+  font-size: var(--fs-heading-m);
+  font-weight: 800;
+}
+.fsw-heading-l {
+  font-size: var(--fs-heading-l);
+  font-weight: 800;
+}
+.fsw-heading-xl {
+  font-size: var(--fs-heading-xl);
+  font-weight: 800;
+}
 /* --- components --- */
+
+.button {
+  font-family: var(--ff-jakarta);
+  font-size: var(--fs-body-m);
+  font-weight: 700;
+  color: hsl(var(--clr-white));
+  padding: 0.875em 1.875em;
+  border: none;
+  border-radius: 2em;
+}
+
+.button-blue {
+  background-color: hsl(var(--clr-dark-blue));
+}
+
+.button-blue:hover {
+  background-color: hsl(var(--clr-dark-grey));
+}
+.button-grad-orange {
+  background-color: var(--clr-gradient-orange);
+}
+
+.button-grad-orange:hover {
+  background-color: hsl(var(--clr-dark-grey));
+}
+
+body {
+  background-color: linear-gradient(
+    0deg,
+    rgba(240, 42, 166, 1) 0%,
+    rgba(255, 111, 72, 1) 100%
+  );
+}
